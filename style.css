@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.naat-container {
+    margin-top: 20px;
+}
+
+.naat-item {
+    margin-bottom: 20px; /* আইটেমের মধ্যে স্থান */
+    border: 1px solid #ccc; /* ঘরের সীমানা */
+    border-radius: 5px; /* কোণার গোলাকৃতি */
+    padding: 10px; /* ঘরের ভিতরে প্যাডিং */
+    background-color: #ffffff; /* ঘরের ব্যাকগ্রাউন্ড কালার */
+    overflow: hidden; /* অতি চলন্ত অংশ লুকানোর জন্য */
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #007BFF; /* চলন্ত অংশের ব্যাকগ্রাউন্ড কালার */
+    color: white; /* লেখার রঙ */
+    padding: 5px; /* কিছু প্যাডিং */
+}
+
+.marquee p {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* চলন্ত এনিমেশন */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    margin: 0; /* শিরোনামের মার্জিন সরানো */
+}
